@@ -1,0 +1,19 @@
+{
+    "name": "miskatur/salat-notifier",
+    "description": "A Laravel package to manage Salat times and notify via Slack.",
+    "autoload": {
+        "psr-4": {
+            "SalatNotifier\\": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SalatNotifier\\SalatNotifierServiceProvider"
+            ]
+        }
+    }
+}
